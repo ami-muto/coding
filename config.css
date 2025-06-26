@@ -75,14 +75,15 @@ h1 {
 
 
 .safety-info {
-  padding-left: 150px;
-  padding-right: 150px;
+  padding: 0px 100px 0px 100px;
 }
 
 /* メインタイトルのスタイル */
 .main-title {
   font-size: 30px;
   /* 文字サイズを30pxに設定 */
+width: 80%;
+margin: auto;
 
 }
 
@@ -112,6 +113,8 @@ h1 {
   --bs-accordion-active-color: black;
   --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-btn-focus-border-color: none;
+  width: 80%;
+  margin: auto;
 }
 
 .accordion-item {
@@ -132,9 +135,11 @@ h1 {
 h3 {
   font-size: 30px;
   height: auto;
-  margin-top: 20px;
+ 
   padding: 10px;
   border-radius: 8px;
+  width: 80%;
+  margin: auto;
 }
 
 .img-wrapper {
@@ -155,11 +160,11 @@ h3 {
   box-sizing: border-box;
 }
 
-.signature-container,
-.barista-container,
-.food-container {
+.container {
   display: flex;
   text-align: left;
+  width: 80%;
+  margin: auto;
 }
 
 
@@ -389,23 +394,17 @@ footer {
   }
 
 
+ 
 
-
-
-  .swiper-slide {
-    padding: 10px 100px;
-  }
+   .swiper-slide { 
+    padding: 5% 10%;
+  } 
 
 
   .container {
     width: 100%;
     max-width: 90%;
     text-align: left;
-  }
-
-  .signature-container,
-  .barista-container,
-  .food-container {
     display: block;
   }
 
@@ -447,6 +446,7 @@ footer {
     /* 中の要素に合わせて縦横fit */
     width: fit-content;
     height: fit-content;
+    padding: 0 !important;
   }
 
 
