@@ -1,0 +1,515 @@
+body {
+  background-color: #ffefd5;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  /* 太字に設定 */
+}
+
+
+/* スライド */
+
+.swiper {
+  width: 100%;
+  height: 400px;
+  /* 高さを統一 */
+  object-fit: cover;
+  /* アスペクト比を維持しつつ、指定した領域に収める */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ナビゲーションバーのスタイル */
+.navbar {
+  margin-bottom: 0;
+  /* 下のマージンを0に設定 */
+  z-index: 1030;
+  /* 他の要素より前面に表示 */
+  background-color: lightgray;
+
+}
+
+
+/* 画像カルーセルのスタイル */
+.hero-carousel {
+  margin-bottom: 0;
+  /* 下のマージンを0に設定 */
+}
+
+
+.safety-info {
+  padding: 0px 100px 0px 100px;
+}
+
+/* メインタイトルのスタイル */
+.main-title {
+  font-size: 30px;
+  /* 文字サイズを30pxに設定 */
+width: 80%;
+margin: auto;
+
+}
+
+/* アコーディオンボタンのスタイル */
+.accordion-button {
+  font-size: 20px;
+  /* 文字サイズを20pxに設定 */
+  background-color: #FFC7AF;
+  /* 背景色をピンクに設定 */
+  cursor: pointer;
+  padding: 5px;
+  /* 内側の余白を5pxに設定 */
+
+}
+
+/* アコーディオンボタンが開いているときの背景色を変更 */
+.accordion-body:not(.collapsed) {
+  background-color: #FFEFD5 !important;
+}
+
+.accordion {
+
+  --bs-accordion-border-color: none;
+  --bs-accordion-active-bg: #FFC7AF;
+  --bs-accordion-btn-icon: none;
+  --bs-accordion-btn-active-icon: none;
+  --bs-accordion-active-color: black;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-focus-border-color: none;
+  width: 80%;
+  margin: auto;
+}
+
+.accordion-item {
+  margin-bottom: 1px;
+}
+
+
+
+/* img-wrapperのスタイル */
+.img-wrapper {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* タイトルのスタイル　*/
+h3 {
+  font-size: 30px;
+  height: auto;
+ 
+  padding: 10px;
+  border-radius: 8px;
+  width: 80%;
+  margin: auto;
+}
+
+.img-wrapper {
+
+  width: 100%;
+  align-items: stretch;
+
+}
+
+.img-wrapper img {
+  width: 50%;
+  height: auto;
+}
+
+.img-wrapper p {
+  width: 50%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  text-align: left;
+  width: 80%;
+  margin: auto;
+}
+
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.0s ease-out, transform 0.3s ease-out;
+}
+
+.fade-in.visible {
+
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+/* コンテナ全体のスタイル */
+.address-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 950px;
+  height: 300px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+/* テキストエリアのスタイル */
+.address-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Address部分のスタイル */
+.address {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* 詳細情報のスタイル */
+.details {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+/* Opening Hoursのスタイル */
+.time,
+.weekend {
+  font-size: 12px;
+  margin: 10px 0 5px;
+}
+
+/* 営業時間のスタイル */
+.monday {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* 画像のスタイル */
+.address-image img {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+
+}
+
+.space {
+  display: inline-block;
+  width: 1ch;
+  /* 1文字分の幅 */
+}
+
+
+
+h4 {
+  color: black;
+  font-size: 25px;
+}
+
+.address-wrapper {
+  margin: 0 auto;
+  width: 76%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  margin-top: 5%;
+  width: 80%;
+
+}
+
+.text-container {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.text-container p,
+.text-container h5 {
+  line-height: 2.0;
+}
+
+.text-container p {
+  color: white;
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-right: 5%;
+}
+
+.image-container img {
+  max-width: 95%;
+  padding: 0 5%;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+
+.shop-wrapper {
+  margin: 30px auto;
+}
+
+.shop-wrapper h5 {
+  text-align: center;
+}
+
+.shop-wrapper img {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 75%;
+  padding: 15px;
+}
+
+.shop {
+  display: flex;
+  justify-content: center;
+}
+
+h5 {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+
+
+.shop-wrapper h5 {
+  text-align: center;
+}
+
+.shop-wrapper img {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 75%;
+  padding: 15px;
+}
+
+.shop {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.site-footer {
+  background-color: darkgray;
+  /* グレー背景 */
+  color: black;
+  /* 黒文字 */
+  padding: 20px 0;
+  margin-top: 15px;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.site-footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center !important;
+  /* テキストを中央揃え */
+}
+
+.site-footer .footer-links li {
+  display: inline;
+  margin: 0 15px;
+
+}
+
+footer {
+  display: flex !important;
+
+}
+
+
+
+
+@media screen and (max-width: 760px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+
+  .naver {
+    width: auto;
+    background-color: lightgrey;
+    padding: 15px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+  }
+
+
+ 
+
+   .swiper-slide { 
+    padding: 5% 10%;
+  } 
+
+
+  .container {
+    width: 100%;
+    max-width: 90%;
+    text-align: left;
+    display: block;
+  }
+
+  .img-wrapper {
+    margin: 0;
+    width: 100%;
+    padding: 0 36px;
+  }
+
+  .img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-wrapper p {
+    width: 100%;
+    text-align: left;
+    padding: 0 0;
+  }
+
+  h4 {
+    color: white;
+    font-size: 25px;
+  }
+
+  .address-wrapper {
+    width: 85%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .address-container {
+
+    align-items: center;
+    background-color: black;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 中の要素に合わせて縦横fit */
+    width: fit-content;
+    height: fit-content;
+    padding: 0 !important;
+  }
+
+
+
+  .text-container {
+    width: 100%;
+    margin-left: 5%;
+  }
+
+  .text-container p,
+  .text-container h5 {
+    line-height: 2.0;
+  }
+
+  .text-container p {
+    color: white;
+  }
+
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+  }
+
+  .image-container img {
+    max-width: 95%;
+    padding: 0 5%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .shop-wrapper {
+    display: none;
+
+  }
+
+  .shop-wrapper img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 75%;
+    padding: 0 5px;
+  }
+
+  .shop-wrapper p {
+    font-size: 50%;
+  }
+
+
+
+
+  .site-footer .footer-links {
+    flex-direction: row !important;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center !important;
+    /* テキストを中央揃え */
+  }
+
+  .site-footer .footer-links li {
+
+    margin: 0 15px;
+  }
+}
